@@ -1,0 +1,7 @@
+An example program showing the usage of nested pipes.
+
+This shows an example where the program wants to grab the output of
+"ls -lha | grep ex | awk '{print $9}' | head -n 1'.
+
+The parent process gets the final output via the pipe from the last child
+i.e (head -n 1).
